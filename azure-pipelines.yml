@@ -28,4 +28,4 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts: test-file'
   
-- task : 
+# - task : 
