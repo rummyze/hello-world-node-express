@@ -24,7 +24,6 @@ steps:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
     archiveType: zip
-    includeRootFolder: false
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts: drop'
