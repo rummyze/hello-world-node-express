@@ -15,8 +15,8 @@ steps:
 
 - script: |
     npm install
-    npm audit fix  --force
-    npm run build
+    # npm audit fix  --force
+    # npm run build
   displayName: 'Run a multi-line script'
 
 - task: ArchiveFiles@2
