@@ -2,6 +2,7 @@
 variables:
   dockerId: rummyze  # Replace with your Docker ID for Docker Hub or the admin user name for the Azure Container Registry
   imageName: test  # Replace with the name of the image you want to publish
+  pswd: PdtAMv1iKlTT6KdxrvfosTdwJfJM=ndW  # Replace with the password form the Azure Container Registry
 
 trigger:
 - master
@@ -33,5 +34,4 @@ steps:
     docker build -t $(dockerId).azurecr.io/$(imageName) .
     # docker login -u $(dockerId) -p $(pswd) $(dockerId).azurecr.io
     docker push $(dockerId).azurecr.io/$(imageName)
-  # env:
-    # pswd: $(dockerPassword)        # Define dockerPassword in the Variables tab of this pipeline in Pipelines page of web interface
+
