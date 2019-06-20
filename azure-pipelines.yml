@@ -33,5 +33,5 @@ steps:
     docker build -t $(dockerId).azurecr.io/$(imageName) .
     # docker login -u $(dockerId) -p $(pswd) $(dockerId).azurecr.io
     docker push $(dockerId).azurecr.io/$(imageName)
-  env:
+  # env:
     # pswd: $(dockerPassword)        # Define dockerPassword in the Variables tab of this pipeline in Pipelines page of web interface
