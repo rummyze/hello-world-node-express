@@ -1,6 +1,7 @@
-\variables:
-  dockerId: my-docker-id  # Replace with your Docker ID for Docker Hub or the admin user name for the Azure Container Registry
-  imageName: my-image-name  # Replace with the name of the image you want to publish
+#
+variables:
+  dockerId: rummyze  # Replace with your Docker ID for Docker Hub or the admin user name for the Azure Container Registry
+  imageName: test  # Replace with the name of the image you want to publish
 
 trigger:
 - master
