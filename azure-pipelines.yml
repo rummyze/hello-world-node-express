@@ -30,7 +30,7 @@ steps:
   displayName: 'Publish artifacts: test-file'
 
 - script: |
-    docker build -t $(dockerId).azurecr.io/$(imageName) ./Dockerfile
+    docker build -t $(dockerId).azurecr.io/$(imageName) .
 #     docker login -u $(dockerId) -p $(pswd) $(dockerId).azurecr.io
 #     docker push $(dockerId).azurecr.io/$(imageName)
 #   env:
